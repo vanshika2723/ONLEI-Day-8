@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLEI Technologies | Day 8</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript DOM Manipulation</h1>
+        <p>ONLEI Technologies - Web Development Internship</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Task 3: DOM Manipulation -->
+        <section class="card">
+            <h2>1. DOM Manipulation</h2>
+
+            <h3 id="mainHeading">Welcome to JavaScript!</h3>
+
+            <div class="button-group">
+                <button id="changeTextBtn">Change Text</button>
+                <button id="changeColorBtn">Change Color</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </section>
+
+        <!-- Task 4: Character Counter -->
+        <section class="card">
+            <h2>2. Live Character Counter</h2>
+
+            <textarea
+                id="messageInput"
+                placeholder="Start typing something..."
+                maxlength="200"
+            ></textarea>
+
+            <p class="counter">
+                Characters: <span id="charCount">0</span>/200
+            </p>
+        </section>
+
+        <!-- Task 5 and 6: To-Do List -->
+        <section class="card">
+            <h2>3. Interactive To-Do List</h2>
+
+            <form id="taskForm">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task..."
+                    required
+                >
+                <button type="submit">Add Task</button>
+            </form>
+
+            <div class="task-summary">
+                Total Tasks: <span id="totalTasks">0</span>
+                <span class="separator">|</span>
+                Completed: <span id="completedTasks">0</span>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <p id="emptyMessage">No tasks added yet!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Vanshika Khandelwal | ONLEI Technologies Internship</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

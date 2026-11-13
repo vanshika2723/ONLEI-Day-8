@@ -1,0 +1,240 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f5f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #292b45, #514b75);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #e2e0f0;
+    font-size: 15px;
+}
+
+/* Main Container */
+.container {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 0 18px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.card h2 {
+    color: #393653;
+    margin-bottom: 20px;
+    font-size: 21px;
+    border-left: 4px solid #e88a45;
+    padding-left: 12px;
+}
+
+/* Heading Manipulation */
+#mainHeading {
+    text-align: center;
+    margin: 20px 0;
+    color: #514b75;
+    font-size: 25px;
+}
+
+/* Buttons */
+button {
+    border: none;
+    background: #514b75;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #393653;
+    transform: translateY(-2px);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Character Counter */
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+    resize: vertical;
+    outline: none;
+}
+
+textarea:focus,
+input:focus {
+    border-color: #514b75;
+}
+
+.counter {
+    text-align: right;
+    margin-top: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+#charCount {
+    color: #e07835;
+    font-weight: bold;
+}
+
+/* To-Do Form */
+#taskForm {
+    display: flex;
+    gap: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+#taskForm button {
+    background: #e07835;
+}
+
+#taskForm button:hover {
+    background: #c76224;
+}
+
+/* Task Summary */
+.task-summary {
+    background: #f4f2f9;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.separator {
+    margin: 0 8px;
+    color: #aaa;
+}
+
+/* Task List */
+#taskList {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f8f8fb;
+    border-radius: 7px;
+    border: 1px solid #eee;
+}
+
+#taskList li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+#taskList li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.done-btn {
+    background: #39845d;
+}
+
+.done-btn:hover {
+    background: #286744;
+}
+
+.delete-btn {
+    background: #d9534f;
+}
+
+.delete-btn:hover {
+    background: #b52b27;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #888;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 12px;
+    color: #777;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    #taskForm {
+        flex-direction: column;
+    }
+
+    #taskForm button {
+        width: 100%;
+    }
+
+    #taskList li {
+        flex-wrap: wrap;
+    }
+
+    #mainHeading {
+        font-size: 21px;
+    }
+}
